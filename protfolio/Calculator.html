@@ -1,0 +1,52 @@
+<html><head><title>  Calculator </title>
+    <!-- google font link-->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+
+    <!--css link-->
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <marquee behavior="alternate" direction="left" scrollamount="5" width="70%"><h1 style="font-family: sans-serif"> Normal Calculator</h1></marquee>
+    <div class="normal">
+    <form name="cal">
+        <input class="dis" type="text" placeholder="0" name="display">
+        <br><br>
+        
+        <div class="buttom">
+        <input type="button" value="7" name="seven" onclick="cal.display.value+='7'">
+        <input type="button" value="8" name="eight" onclick="cal.display.value+='8'">
+        <input type="button" value="9" name="nine" onclick="cal.display.value+='9'">
+        <input type="button" value="*" name="into" onclick="cal.display.value+='*'">
+        
+        <br><br>
+        
+        <input type="button" value="4" name="four" onclick="cal.display.value+='4'">
+        <input type="button" value="5" name="five" onclick="cal.display.value+='5'">
+        <input type="button" value="6" name="six" onclick="cal.display.value+='6'">
+        <input type="button" value="-" name="minus" onclick="cal.display.value+='-'">
+        
+        <br><br>
+        
+        <input type="button" value="1" name="one" onclick="cal.display.value+='1'">
+        <input type="button" value="2" name="two" onclick="cal.display.value+='2'">
+        <input type="button" value="3" name="three" onclick="cal.display.value+='3'">
+        <input type="button" value="/" name="divide" onclick="cal.display.value+='/'">
+        
+        <br><br>
+        
+        <input type="button" value="0" name="Zero" onclick="cal.display.value+='0'">
+        <input type="button" value="." name="dot" onclick="cal.display.value+='.'">
+        <input type="button" value="+" name="plus" onclick="cal.display.value+='+'">
+        <input type="button" value="%" name="percent" onclick="cal.display.value+='%'"><br><br>
+        <input type="button" value="=" name="equal" onclick="cal.display.value =eval(cal.display.value)" style="width: 30%; border-radius: 10px; background-color: deepskyblue">
+        
+        
+        <br><br>
+        <input class="del"type="button" value="Delete" onclick="cal.display.value=''" id="del" style="width: 30%; border-radius: 10px; background-color: red ; color: aliceblue" >
+        </div>
+        </form>
+    </div>
+    
+    
+</body>
+</html>
