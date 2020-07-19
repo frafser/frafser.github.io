@@ -1,0 +1,195 @@
+/*-----Universal css-----*/
+html, body{
+    margin: 0;
+    padding: 0;
+}
+/*------Common css-------*/ 
+$color1: #ffff;
+$color2: #ff5722;
+/*test color*/
+ .red{
+     background: red;
+ }
+ .green{
+     background: green;
+ }
+ .blue{
+     background: blue;
+ }
+ .yellow{
+    background: yellow;
+ }
+/*------Main css-------*/
+header{
+    .topbar{
+        background: rgba(0,0,0,0.9);
+        .container{
+            width: calc(100% - 400px);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            
+        }
+        .icon{
+           width: 50%;
+           i{
+               font-size: 20pt;
+               margin-right: 5px;
+               color: $color1;
+               
+           } 
+        }
+        .info{
+            width: 50%;
+            text-align: right;
+            a{
+                margin-right: 45px;
+                text-decoration: none;
+                color: $color1;
+                i{
+                    font-size: 10pt;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+    .menubar{
+        width: 100%;
+        padding: 5px;
+        position: absolute;
+        background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6));
+        .container{
+            display: flex;
+            align-items: center;
+            width: calc(100% - 400px);
+            margin: 0 auto;
+            .logo{
+                width: 100%;
+                span{
+                    color: $color1;
+                     font-size: 15pt;
+                }
+            }
+            .menus{
+                width: 100%;
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    margin-left: 60px;
+                    list-style-type: none;
+                    li{
+                        display: inline-block;
+                        a{
+                            display: block;
+                            padding: 5px;
+                            text-decoration: none;
+                            color: $color1;
+                            font-size: small;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.banner{
+    background:linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url("../image/banner/marofa.jpg");
+    height: 585px;
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+    .textbox{
+        width: 500px;
+        position: relative;
+        left: 10px;
+        margin: 0 auto;
+        transform: translateY(300px);
+        color: $color1;
+        h1{
+            margin: 0;
+            font-size: 30pt;
+        }
+        h2{
+            margin: 0;
+            font-size: 18pt;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}
+.myself{
+    width: calc(100% - 50px);
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    .textbox{
+        width: 100%;
+        margin-left: 50px;
+        h1{
+            font-size: 30pt;
+            margin: 0;
+            width: 400px;
+        }
+        p{
+            width: 600px;
+            margin-bottom: 30px;
+        }
+        a{
+            color: black;  
+            border: 2px solid black;
+            border-radius:10pt ;
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+    a:hover{
+        background-color: black;
+        color: $color1;
+    }
+}
+img{
+    margin-right: 30px;
+    width: 900px;
+}
+.journey{
+    width: 100%;
+    .containar{
+        width: calc(100% - 100px);
+        margin: 0 auto;
+        background: #333333;
+        .textbox{
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 10px 0;
+            h1{
+                color: $color2;
+                font-family: 'Montserrat', sans-serif;
+            }
+            span{
+                color: #dad6d6;
+                font-family: 'Oxygen', sans-serif;
+                font-style: italic;
+                margin: 0;
+            }
+        }
+        .row{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            .card{
+                width: calc(100% / 4);
+                margin-top:20px;
+                margin-right: 30px;
+                margin-bottom: 115px;
+                text-align: center;
+                color: $color1;
+                padding: 10px 10px;
+                background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+            }
+        }
+    }
+}

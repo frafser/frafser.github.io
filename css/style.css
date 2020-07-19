@@ -1,0 +1,248 @@
+/*-----Universal css-----*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/*------Common css-------*/
+/*test color*/
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.yellow {
+  background: yellow;
+}
+
+/*------Main css-------*/
+header .topbar {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+header .topbar .container {
+  width: calc(100% - 400px);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+header .topbar .icon {
+  width: 50%;
+}
+
+header .topbar .icon i {
+  font-size: 20pt;
+  margin-right: 5px;
+  color: #ffff;
+}
+
+header .topbar .info {
+  width: 50%;
+  text-align: right;
+}
+
+header .topbar .info a {
+  margin-right: 45px;
+  text-decoration: none;
+  color: #ffff;
+}
+
+header .topbar .info a i {
+  font-size: 10pt;
+  margin-right: 5px;
+}
+
+header .menubar {
+  width: 100%;
+  padding: 5px;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+header .menubar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% - 400px);
+  margin: 0 auto;
+}
+
+header .menubar .container .logo {
+  width: 100%;
+}
+
+header .menubar .container .logo span {
+  color: #ffff;
+  font-size: 15pt;
+}
+
+header .menubar .container .menus {
+  width: 100%;
+}
+
+header .menubar .container .menus ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 60px;
+  list-style-type: none;
+}
+
+header .menubar .container .menus ul li {
+  display: inline-block;
+}
+
+header .menubar .container .menus ul li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #ffff;
+  font-size: small;
+}
+
+.banner {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../image/banner/marofa.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../image/banner/marofa.jpg");
+  height: 585px;
+  background-size: 450px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
+}
+
+.banner .textbox {
+  width: 500px;
+  position: relative;
+  left: 10px;
+  margin: 0 auto;
+  -webkit-transform: translateY(300px);
+          transform: translateY(300px);
+  color: #ffff;
+}
+
+.banner .textbox h1 {
+  margin: 0;
+  font-size: 30pt;
+}
+
+.banner .textbox h2 {
+  margin: 0;
+  font-size: 18pt;
+}
+
+.banner .textbox p {
+  margin: 0;
+}
+
+.myself {
+  width: calc(100% - 50px);
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myself .textbox {
+  width: 100%;
+  margin-left: 50px;
+}
+
+.myself .textbox h1 {
+  font-size: 30pt;
+  margin: 0;
+  width: 400px;
+}
+
+.myself .textbox p {
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+.myself .textbox a {
+  color: black;
+  border: 2px solid black;
+  border-radius: 10pt;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.myself a:hover {
+  background-color: black;
+  color: #ffff;
+}
+
+img {
+  margin-right: 30px;
+  width: 900px;
+}
+
+.journey {
+  width: 100%;
+}
+
+.journey .containar {
+  width: calc(100% - 100px);
+  margin: 0 auto;
+  background: #333333;
+}
+
+.journey .containar .textbox {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.journey .containar .textbox h1 {
+  color: #ff5722;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.journey .containar .textbox span {
+  color: #dad6d6;
+  font-family: 'Oxygen', sans-serif;
+  font-style: italic;
+  margin: 0;
+}
+
+.journey .containar .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.journey .containar .row .card {
+  width: calc(100% / 4);
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-bottom: 115px;
+  text-align: center;
+  color: #ffff;
+  padding: 10px 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+/*# sourceMappingURL=style.css.map */
