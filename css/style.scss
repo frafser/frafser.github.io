@@ -1,0 +1,325 @@
+/*------Common css-------*/ 
+$color1: #ffff;
+$color2: #ff5722;
+$font1: 'Montserrat', sans-serif;
+$font2: 'Oxygen', sans-serif;
+/*Header*/
+header{
+    position: relative;
+    .navbar{
+        position: absolute;
+        width: 100%;
+        z-index: 10000;
+        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) ;
+        .logo{
+            color: $color2;
+            font-family: $font1;
+            font-size: 25px;
+        }
+        .nav-item{
+            .nav-link{
+                margin-left: 10px;
+                color: $color1;
+            }
+            .nav-link:hover{
+                color: $color2;
+            }
+        }
+    }
+}
+/*Header End*/ 
+/*Slider*/ 
+
+.carousel-img1{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/banner/banner3.jpg);
+    background-position-x: center;
+   background-repeat: no-repeat;
+}
+.carousel-img2{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/banner/banner6.jpg);
+    background-position-x: center;
+   background-repeat: no-repeat;
+}
+.carousel-img3{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/banner/myimage.jpg);
+    background-position: center center;
+   background-repeat: no-repeat;
+}
+.carousel-item{
+    height: 563px;
+    .carousel-caption{
+        h3{
+            color: $color2;
+            font-family: $font1;
+            font-size: 30pt;
+        }
+        p{
+            font-style: $font2;
+            color: $color1;
+        }
+        a{
+            i{
+                border: 2px solid $color1;
+                padding: 10px 10px;
+                border-radius: 2rem;
+                margin-right: 15px;
+                color: $color1;
+            }
+            i:hover{
+                background: $color2;
+            }
+        }
+    }
+}
+/*End Slider*/
+/*Start About*/
+#about{
+    background: rgba(128, 128, 128, 0.445);
+    padding: 100px 0 !important;
+    h1{
+        font-family: $font1;
+    }
+    h4{
+        font-family: $font2;
+    }
+    .profile-2{
+        width: 390px;
+    }
+    .btn{
+        margin-left: 0 !important;
+    }
+    .btn-1{
+        background: $color2;
+        color: $color1;
+    }
+    .btn-1:hover{
+        border: 1px solid $color2;
+        color: $color2;
+        background: transparent;
+    }
+    .btn-2:hover{
+        border: 1px solid black;
+        color: black;
+        background: transparent;
+    }
+}
+/*End About*/
+/*Start Life*/ 
+#life{
+    background: linear-gradient(rgba(0,0,0,0.8) rgba(0,0,0,0.8)), url(../image/banner/banner6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    .heading{
+        h1{
+            font-family: $font1;
+            color: $color2;
+        }
+        p{
+            font-style: italic;
+            color: $color1;
+        }
+    }
+    .card{
+        background: linear-gradient(rgba(0,0,0,0.6));
+        color: $color1;
+        box-shadow: 1px 1px 5px 1px $color1;
+        padding-top: 10px;
+        i{
+            font-size: 50px;
+            margin-bottom: 5px;
+        }
+        h1{
+            font-family: $font1;
+            color: $color2;
+        }
+        p{
+           font-family: $font2; 
+        }
+    }
+}
+/*End Life*/ 
+/*Start Works*/ 
+#works{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../image/banner/workbanner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2{
+        color: $color2;
+        font-family: $font1;
+    }
+    p{
+        color: rgb(175, 175, 175);
+        font-style: italic;
+    }
+    img{
+        transition: transform 2s;
+    }
+    img:hover{
+        transform: rotateZ(180deg);
+        
+    }
+}
+/*End Works*/
+/*Start youtube*/
+#youtube{
+    h1{
+        color: $color2;
+        font-family: $font1;
+    }
+    p{
+        font-family: $font2;
+        font-style: italic;
+    }
+    .vedioboxsingel{
+        border: 4px solid $color2;
+    }
+}
+/*End youtube*/
+/*start invite*/
+#invite{
+    h1{
+        color: $color2;
+        font-family: $font1;
+    }
+    .contact-info-box{
+        position: relative;
+        i{
+            font-size: 35px;
+            background: #fff;
+            padding: 15px;
+            border: 1px solid rgba(155, 155, 155, 0.671);
+            width: 70px;
+            height: 70px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: -40px;
+            margin-left: -35px;
+            z-index: 10000;
+        }
+        .info-box{
+            text-align: center;
+            background: #f6f6f6 ;
+            padding: 40px 40px 30px;
+        }
+    }
+}
+/*End invite*/
+/*Start massage*/
+#massage{
+    background: url(../image/banner/foooter.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .form{
+        .form-control{
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #ffff;
+            outline: none;
+            padding: 0;
+            border-radius: 0;
+        }
+    }
+}
+/*End massage*/
+/*Start Footer*/
+footer{
+    background: #000;
+    text-align: center;
+    p{
+        color: #848484;        ;
+        font-weight: normal;
+        font-family: $font2;
+        font-size: 15px;
+        a{
+            color: $color2;
+        }
+    }
+}
+/*End Footer*/
+/*madia */
+@media(max-width: 767px){
+    header{
+        .nav-link{
+            margin-left: 0 !important;
+         }
+    }
+    .carousel{
+        .carousel-caption{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 10px;
+            }
+            a{
+                font-size: 10px;
+                i{
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 575px){
+    .carousel{
+        .carousel-caption{
+            h3{
+                font-size: 14px;
+            }
+            p{
+                font-size: 7px;
+            }
+            a{
+                font-size: 10px;
+                i{
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    #about{
+        h1{
+            font-size: 30px;
+        }
+        h4{
+            font-size: 17px;
+        }
+    }
+}
+@media(max-width:575px){
+    #about{
+        .btn{
+            transform: translateX(15px); 
+        }
+        .profile-2{
+          text-align: center;
+        }
+    }
+}
+@media(max-width:767px){
+    #life{
+        .card-col{
+            margin-top: 10px;
+        }
+    }
+}
+@media(max-width:575px){
+    .form{
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+@media(max-width:575px){
+    footer{
+        p{
+            font-size: 12px;
+        }
+    }
+}
+

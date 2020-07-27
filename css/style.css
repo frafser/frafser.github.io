@@ -1,387 +1,351 @@
-
-/* import fonts from fonts.css file */ 
-@import url(./fonts.css);
-
-
-/* css variables */ 
-@import url(./partials/_variables.css);
-
-/* import global styling */ 
-@import url(./partials/_global.css);
-
-
-/* start navigation */ 
-html{
-    scroll-behavior: smooth;
+/*------Common css-------*/
+/*Header*/
+header {
+  position: relative;
 }
 
-.header_area .main-menu .navbar .navbar-brand{
-    padding: 0 2rem 0 5rem;
-    color: #4758DD;
-    font-family:'Hanalei' ;
-}
-.logotwo{
-    font-family:'Hanalei' ;
-    color: #4758DD;
-
+header .navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
 
-.header_area .main-menu .navbar{
-    padding: 1rem 20rem ;
+header .navbar .logo {
+  color: #ff5722;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
 }
 
-.header_area .main-menu .nav-item .nav-link{
-    font: normal 500 15px/2px var(--roboto);
-    text-transform: uppercase;
-    padding: 1.7rem;
-    color: var(--title-color);
+header .navbar .nav-item .nav-link {
+  margin-left: 10px;
+  color: #ffff;
 }
 
-.header_area .main-menu .navbar-nav .active a{
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+header .navbar .nav-item .nav-link:hover {
+  color: #ff5722;
 }
 
-.header_area .main-menu .navbar-nav a:hover{
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+/*Header End*/
+/*Slider*/
+.carousel-img1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../image/banner/banner3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/banner/banner3.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
 
-
-/* end navigation */ 
-
-/* Banner Area */ 
-
-.site-main .site-banner {
-    background: url(./img/banner/) ;
-    padding-top: 2em;
-   
+.carousel-img2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../image/banner/banner6.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/banner/banner6.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
 }
 
-.site-main .site-banner .site-title h3{
-    padding-top: 35%;
-    font-weight: 500;
+.carousel-img3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(../image/banner/myimage.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/banner/myimage.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.site-main .site-banner .site-title h3::after{
-    content: " ";
-    height: 2px;
-    width: 18vw;
-    background: black;
-    display: inline-block;
-    margin-left: 5%;
-    transform: translateY(-10px);
+.carousel-item {
+  height: 563px;
 }
 
-.site-main .site-banner .site-title h1{
-    font-size: 5rem;
+.carousel-item .carousel-caption h3 {
+  color: #ff5722;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30pt;
 }
 
-.site-main .site-banner .site-title h4{
-    font-size: 1.5rem;
+.carousel-item .carousel-caption p {
+  font-style: "Oxygen", sans-serif;
+  color: #ffff;
 }
 
-.site-main .site-banner .banner-image > img{
-    padding: 7rem 0;
-    width: 90rem;
-}
-.button{
-
-    
-        width: 200px;
-        height: 60px;
-        animation-name: get;
-        animation-duration: 10s;
-      }
-      
-      @keyframes get {
-        60%   {background-color: aqua;}
-        70%  {background-color: royalblue;}
-        50%  {background-color: aqua;}
-        55% {background-color: royalblue;}
-        60%  {background-color: aqua;}
-        65%  {background-color: royalblue;}
-        70% {background-color: aqua;}
-        80%  {background-color: royalblue;}
-        85%  {background-color: aqua;}
-        90% {background-color: royalblue;}
-        95% {background-color: aqua;}
-        100% {background-color: royalblue;}
-
+.carousel-item .carousel-caption a i {
+  border: 2px solid #ffff;
+  padding: 10px 10px;
+  border-radius: 2rem;
+  margin-right: 15px;
+  color: #ffff;
 }
 
-
-
-/* End Banner Area */ 
-
-/* Start About Area */ 
-
-.site-main .about-area{
-    padding: 8rem 5rem;
+.carousel-item .carousel-caption a i:hover {
+  background: #ff5722;
 }
 
-.site-main .about-area .about-title h2 > span{
-    display: block;
-    font: normal bold 49px/ 60px var(--roboto);
-    letter-spacing: 21px;
+/*End Slider*/
+/*Start About*/
+#about {
+  background: rgba(128, 128, 128, 0.445);
+  padding: 100px 0 !important;
 }
 
-.site-main .about-area .about-title .paragraph > p{
-    padding: .4rem 0;
+#about h1 {
+  font-family: "Montserrat", sans-serif;
 }
 
-/* End About Area */ 
-
-
-/* Start Brand Area */ 
-
-.site-main .brand-area{
-    padding: 1rem 20rem;
-    margin-bottom: 4rem;
+#about h4 {
+  font-family: "Oxygen", sans-serif;
 }
 
-.site-main .brand-area .first-row .col-lg-4{
-    display: flex;
-    justify-content: center;
+#about .profile-2 {
+  width: 390px;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand{
-    border: 1px solid var(--border-color);
-    text-align: center;
-    padding: 1.8rem 0rem;
-    margin: .9rem 0;
-    width: 180px;
-    height: 100px;
-    cursor: pointer;
-    transition: transform .4s ease;
+#about .btn {
+  margin-left: 0 !important;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
-    width: 50%;
+#about .btn-1 {
+  background: #ff5722;
+  color: #ffff;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
-    box-shadow: var(--box-shadow);
-    transform: scale(1.1);
+#about .btn-1:hover {
+  border: 1px solid #ff5722;
+  color: #ff5722;
+  background: transparent;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img{
-    filter: brightness(0.15);
+#about .btn-2:hover {
+  border: 1px solid black;
+  color: black;
+  background: transparent;
 }
 
-    
-
-
-.site-main .brand-area .experience-area{
-    padding-left: 1rem;
+/*End About*/
+/*Start Life*/
+#life {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url(../image/banner/banner6.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(../image/banner/banner6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-.site-main .brand-area .experience-area span{
-    display: block;
+#life .heading h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #ff5722;
 }
 
-.site-main .brand-area .experience-area .years-area{
-    background: url(../img/client-info-bg.png) no-repeat 45px 20px;
-    padding: 2rem 0;
-    width: 40rem;
-    height: 18rem;
-    padding-left: 8rem;
-    position: relative;
+#life .heading p {
+  font-style: italic;
+  color: #ffff;
 }
 
-.site-main .brand-area .experience-area .bg-panel{
-    position: absolute;
-    left: -190px; top: 0%;
-    background: #e029290a;
-    width: 400px;
-    height: 400px;
-    margin-left: 340px;
-    z-index: -1;
+#life .card {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6));
+  color: #ffff;
+  -webkit-box-shadow: 1px 1px 5px 1px #ffff;
+          box-shadow: 1px 1px 5px 1px #ffff;
+  padding-top: 10px;
 }
 
-.site-main .brand-area .experience-area .years-area .years{
-    font: normal bold 84px/40px var(--roboto);
-    color: var(--primary-color2);
-    z-index: 2;
+#life .card i {
+  font-size: 50px;
+  margin-bottom: 5px;
 }
 
-.site-main .brand-area .experience-area .years-area h2 > span{
-    font: normal 600 22px/30px var(--roboto);
+#life .card h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #ff5722;
 }
 
-.site-main .brand-area .experience-area .call-area{
-    padding-left: 10rem;
+#life .card p {
+  font-family: "Oxygen", sans-serif;
 }
 
-/* End Brand Area */ 
-
-/* Services Area */ 
-
-.site-main .services-area{
-    padding: 7rem 2rem;
+/*End Life*/
+/*Start Works*/
+#works {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../image/banner/workbanner2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/banner/workbanner2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.site-main .services-area .services-title{
-    padding: 0 14rem;
+#works h2 {
+  color: #ff5722;
+  font-family: "Montserrat", sans-serif;
 }
 
-.site-main .services-area .services-title h1{
-    font-size: 35px;
+#works p {
+  color: #afafaf;
+  font-style: italic;
 }
 
-.site-main > .services-area .services{
-    background: rgba(248, 252, 253, 0.973);
-    padding: 2rem 0;
-    width: 16rem;
-    margin: 5rem .5rem;
-    transition: box-shadow .7s ease;
+#works img {
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
 }
 
-.site-main > .services-area .services:hover{
-    box-shadow: var(--box-shadow);
+#works img:hover {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
 }
 
-
-
-/* End Services Area */ 
-
-
-/* Project Area */ 
-
-.site-main .project-area{
-    padding: 4rem 0;
+/*End Works*/
+/*Start youtube*/
+#youtube h1 {
+  color: #ff5722;
+  font-family: "Montserrat", sans-serif;
 }
 
-.site-main .project-area .button-group button{
-    background: transparent;
-    border: none;
-    font: normal 500 16px/130px var(--roboto);
-    text-transform: uppercase;
+#youtube p {
+  font-family: "Oxygen", sans-serif;
+  font-style: italic;
 }
 
-.site-main .project-area .button-group button + button{
-    padding-left: 3rem;
+#youtube .vedioboxsingel {
+  border: 4px solid #ff5722;
 }
 
-.site-main .project-area .grid .our-project > .title h4{
-    font: normal 700 25px/12px var(--roboto);
+/*End youtube*/
+/*start invite*/
+#invite h1 {
+  color: #ff5722;
+  font-family: "Montserrat", sans-serif;
 }
 
-.site-main .project-area .grid .our-project .img a:hover img{
-    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+#invite .contact-info-box {
+  position: relative;
 }
 
-
-/* End Project Area */ 
-
-
-/* About Me */ 
-
-.site-main .about-area .about-title p{
-    padding: 1rem 7rem;
+#invite .contact-info-box i {
+  font-size: 35px;
+  background: #fff;
+  padding: 15px;
+  border: 1px solid rgba(155, 155, 155, 0.671);
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -40px;
+  margin-left: -35px;
+  z-index: 10000;
 }
 
-.site-main .about-area .client{
-    background: #ffffff10;
-    box-shadow: var(--box-shadow);
-    margin: 3rem 0rem;
+#invite .contact-info-box .info-box {
+  text-align: center;
+  background: #f6f6f6;
+  padding: 40px 40px 30px;
 }
 
-.site-main .about-area .client .client-img{
-    padding: 2rem;
+/*End invite*/
+/*Start massage*/
+#massage {
+  background: url(../image/banner/foooter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.site-main .about-area .client .about-client{
-    padding-top: 2rem;
+#massage .form .form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffff;
+  outline: none;
+  padding: 0;
+  border-radius: 0;
 }
 
-.site-main .about-area .client .about-client h4{
-    font: normal 500 21px/ 20px var(--roboto);
+/*End massage*/
+/*Start Footer*/
+footer {
+  background: #000;
+  text-align: center;
 }
 
-.site-main .about-area .client .about-client p{
+footer p {
+  color: #848484;
+  font-weight: normal;
+  font-family: "Oxygen", sans-serif;
+  font-size: 15px;
+}
+
+footer p a {
+  color: #ff5722;
+}
+
+/*End Footer*/
+/*madia */
+@media (max-width: 767px) {
+  header .nav-link {
+    margin-left: 0 !important;
+  }
+  .carousel .carousel-caption h3 {
+    font-size: 20px;
+  }
+  .carousel .carousel-caption p {
+    font-size: 10px;
+  }
+  .carousel .carousel-caption a {
+    font-size: 10px;
+  }
+  .carousel .carousel-caption a i {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .carousel .carousel-caption h3 {
     font-size: 14px;
+  }
+  .carousel .carousel-caption p {
+    font-size: 7px;
+  }
+  .carousel .carousel-caption a {
+    font-size: 10px;
+  }
+  .carousel .carousel-caption a i {
+    margin-right: auto;
+  }
 }
 
-.site-main .about-area .owl-carousel .owl-item{
-    display: flex;
-    justify-content: center;
-    padding: 0 1.5rem;
+@media (max-width: 767px) {
+  #about h1 {
+    font-size: 30px;
+  }
+  #about h4 {
+    font-size: 17px;
+  }
 }
 
-.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
-    background: var(--primary-color);
-    width: 12px;
-    height: 12px;
+@media (max-width: 575px) {
+  #about .btn {
+    -webkit-transform: translateX(15px);
+            transform: translateX(15px);
+  }
+  #about .profile-2 {
+    text-align: center;
+  }
 }
 
-
-
-/* End About Me */ 
-
-/* Subscribe me */ 
-
-.site-main .subscribe-us-area .subscribe{
-    background: url(../img/subscribe-bg.png) no-repeat;
-    padding: 10rem 0;
-    margin: 3rem auto;
+@media (max-width: 767px) {
+  #life .card-col {
+    margin-top: 10px;
+  }
 }
 
-.site-main .subscribe-us-area .subscribe .subscribe-title h4{
-    font: normal 700 30px/ 30px var(--roboto);
-    color: whitesmoke;
-}
-
-.site-main .subscribe-us-area .subscribe .subscribe-title p{
-    color: whitesmoke;
-    padding: 1rem 4rem;
-}
-
-.site-main .subscribe-us-area .subscribe form .input-textbox input{
+@media (max-width: 575px) {
+  .form {
     width: 400px;
-    padding: 1.5rem 1rem;
-    border: 1px solid whitesmoke;
-    background: transparent;
-    color: white;
-    font: normal 500 17px/20px var(--roboto);
+    margin: 0 auto;
+  }
 }
 
-.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
-    color: whitesmoke;
+@media (max-width: 575px) {
+  footer p {
+    font-size: 12px;
+  }
 }
-
-.site-main .subscribe-us-area .subscribe form .btn-submit button{
-    background: whitesmoke;
-    color: #000;
-    padding: .7rem 2rem;
-}
-
-/* End subscribe me */ 
-
-/* Footer Area */ 
-
-footer.footer-area{
-    padding: 5rem 0;
-    background: url(../img/footer-bg.png) no-repeat;
-}
-
-footer.footer-area .social h5{
-    font: normal 500 23px/ 30px var(--roboto);
-}
-
-footer.footer-area .social a > i{
-    font-size:22px;
-    padding: 2rem;
-    color: var(--border-color);
-}
-
-footer.footer-area .social a:hover > i{
-    color: var(--primary-color);
-}
-
-
-/* End Footer */ 
+/*# sourceMappingURL=style.css.map */
