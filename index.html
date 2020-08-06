@@ -6,6 +6,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- /boostrap css-->
+    <link rel="stylesheet" href="css/navbar-fixed.css">
+    <!-- /jQuary plugin for nav-fixed-->
     <link rel="stylesheet" href="css/font.css">
     <!-- /google font -->
     <link rel="stylesheet" href="css/all.min.css">
@@ -15,7 +17,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md fixed-top">
             <div class="container">
                 <a href="index.html" class="navbar-brand logo">Fr.Afser</a>
                 <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav">
@@ -25,10 +27,11 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Service</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Youtube</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#works">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#youtube">Youtube</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#invite">Service</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#massage">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +50,7 @@
                 <div class="carousel-item carousel-img1 active" data-interval="10000">
                     <div class="carousel-caption w-50 m-auto">
                         <h3>Abu Md Fazle Rabbi Afser</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, optio, quidem aut maiores officiis, placeat at unde accusamus quos accusantium natus. Debitis aliquid necessitatibus ducimus id exercitationem porro, vel rerum?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe, optio, quidem aut maiores officiis, placeat at unde accusamus quos accusantium natus. Debitis aliquid necessitatibus ducimus id exercitationem porro, vel rerum? lore</p>
                         <a href="..."><i class="fab fa-facebook-f" style="padding: 11px 14px;"></i></a>
                         <a href="..."><i class="fab fa-instagram"></i></a>
                         <a href="..."><i class="fab fa-youtube"></i></a>
@@ -96,8 +99,8 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, dicta adipisci,Quod?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, suscipit! ducimus magnam nostrum fugit eveniet accusantium asperiores rerum eius quia ipsam laborum repudiandae reiciendis at, omnis odio. Magni temporibus earum, assumenda expedita ratione sed quaerat repellat optio vitae eum, cumque voluptates mollitia itaque quos doloribus, eos exercitationem consectetur. Quod?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, suscipit!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum iste repellendus fuga corrupti quis! Laborum repellat eum vitae amet maiores pariatur accusantium expedita in, perspiciatis aut dolor ab placeat incidunt.</p>
                     <div class="row col-md-12">
-                        <a href="#" class="btn col-sm-12 col-md-5 m-1 btn-1">DOWNLOAD RESUME</a>
-                        <a href="#" class="btn btn-dark col-sm-12 col-md-3 ml-2 m-1 btn-2">HIRE ME</a>
+                        <a href="#" class="btn col-md-12 col-lg-5 m-1 btn-1">DOWNLOAD RESUME</a>
+                        <a href="#" class="btn btn-dark col-md-12 col-lg-3 ml-2 m-1 btn-2">HIRE ME</a>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 mt-5 text-center profile">
@@ -196,7 +199,7 @@
         </div>
     </section>
     <!--=========== /Youtube ===========--> 
-    <section id="invite" class="text-center">
+    <section id="invite" class="text-center pt-5">
         <div class="container">
             <div class="col-md-12">
                 <h1>Wanna Invite Me?</h1>
@@ -231,20 +234,22 @@
         </div>
     </section>
     <!--=========== /Invite ===========-->  
-    <section id="massage" class="py-5 bg-dark">
+    <section id="massage" class="py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="row mt-5 form">
-                            <input type="text" placeholder="Name" class="form-control   col-md-5 col-sm-5 m-2">
-                            <input type="email" placeholder="Email" class="form-control   col-md-5 col-sm-5 m-2">
-                            <input type="text" placeholder="Subject" class="form-control   col-md-5 col-sm-5 m-2">
-                            <input type="number" placeholder="Number" class="form-control   col-md-5 col-sm-5 m-2">
-                            <div class="col-md-11 pl-0 ml-2">
-                                <textarea name="massage" id="massage" rows="5"  cols="50" class="form-control mt-2"  placeholder="Massage"></textarea>
-                            </div>
-                            <a href="#" class="btn btn-danger pl-0 ml-2 text-center     col-md-4 my-3">Send</a>
-                    </div>
+                <div class="col-md-12">
+                    <form action="https://formspree.io/frafser6772@gmail.com"
+                    method="POST">
+                        <div class="form-group col-md-8 col-lg-6 m-auto">
+                            <h1 class="text-center mb-4 text-light">Say Something?</h1>
+                            <input type="text" name="Name" placeholder="Name" class="my-2 form-control input">
+                            <input type="text" name="Number" placeholder="Mobile" class="my-2 form-control input">
+                            <input type="text" name="Subject" placeholder="Subject" class="my-2 form-control input">
+                            <input type="email" name="Email Address" placeholder="Email" class="my-2 form-control input">
+                            <textarea name="Massage"id="" placeholder="Massage" cols="50" rows="5" class="form-control input"></textarea> <br>
+                            <a href=""><input type="submit" value="Send" class="btn btn-danger form-control"></a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -255,8 +260,9 @@
     </footer>
     <!--=========== /Footer ===========--> 
     <!-- Optional JavaScript -->
-    <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/navbar-fixed.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

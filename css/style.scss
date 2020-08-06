@@ -5,12 +5,10 @@ $font1: 'Montserrat', sans-serif;
 $font2: 'Oxygen', sans-serif;
 /*Header*/
 header{
-    position: relative;
-    .navbar{
-        position: absolute;
-        width: 100%;
-        z-index: 10000;
-        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)) ;
+    .navbar{ 
+        background: black;
+        opacity: 92%;
+        border-bottom: 2px solid $color2;
         .logo{
             color: $color2;
             font-family: $font1;
@@ -31,7 +29,7 @@ header{
 /*Slider*/ 
 
 .carousel-img1{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/banner/banner3.jpg);
+    background:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/banner/banner3.jpg);
     background-position-x: center;
    background-repeat: no-repeat;
 }
@@ -197,7 +195,6 @@ header{
             position: absolute;
             margin-top: -40px;
             margin-left: -35px;
-            z-index: 10000;
         }
         .info-box{
             text-align: center;
@@ -213,15 +210,24 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    .form{
-        .form-control{
-            background: transparent;
-            border: none;
-            border-bottom: 1px solid #ffff;
-            outline: none;
-            padding: 0;
-            border-radius: 0;
+    form{
+        h1{
+            font-family: $font1;
         }
+        .input{
+            background: none;
+            color: $color1;
+        }
+        .btn{
+            background-color: $color2;
+        }
+        .btn:hover{
+            border: 2px solid #ff5722;
+            background: none;
+        }
+    }
+    iframe{
+        border: 4px solid $color2;
     }
 }
 /*End massage*/
