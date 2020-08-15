@@ -1,18 +1,21 @@
 /*------Common css-------*/ 
 $color1: #ffff;
-$color2: #ff5722;
+$color2: #FF4E0C;
 $font1: 'Montserrat', sans-serif;
 $font2: 'Oxygen', sans-serif;
 /*Header*/
 header{
     .navbar{ 
         background: black;
-        opacity: 92%;
         border-bottom: 2px solid $color2;
+        box-shadow: 1px 1px 15px -1px #000;
         .logo{
             color: $color2;
             font-family: $font1;
-            font-size: 25px;
+            font-size: 35px;
+        }
+        .logo:hover{
+            color: $color1;
         }
         .nav-item{
             .nav-link{
@@ -26,7 +29,14 @@ header{
     }
 }
 /*Header End*/ 
-/*Slider*/ 
+/*Slider*/
+#myCarousel{
+    .carousel-icon:hover{
+        background-color: $color2;
+        padding: 25px;
+        border-radius: 100%;
+    }
+}
 .carousel-img1{
     background:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/banner/banner3.jpg);
     background-position-x: center;
@@ -196,6 +206,7 @@ header{
             margin-left: -35px;
         }
         .info-box{
+            border: 1px solid rgba(155, 155, 155, 0.671);
             text-align: center;
             background: #f6f6f6 ;
             padding: 40px 40px 30px;
@@ -238,7 +249,7 @@ footer{
         color: #848484;        ;
         font-weight: normal;
         font-family: $font2;
-        font-size: 15px;
+        font-size: 20px;
         a{
             color: $color2;
         }
