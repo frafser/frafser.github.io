@@ -1,14 +1,15 @@
 /*------Common css-------*/
 /*Header*/
 header .navbar {
-  background: black;
-  border-bottom: 2px solid #FF4E0C;
+  background: white;
+  border-top: 2px solid #006eff;
+  border-bottom: 2px solid #006eff;
   -webkit-box-shadow: 1px 1px 15px -1px #000;
           box-shadow: 1px 1px 15px -1px #000;
 }
 
 header .navbar .logo {
-  color: #FF4E0C;
+  color: #006eff;
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
 }
@@ -19,17 +20,18 @@ header .navbar .logo:hover {
 
 header .navbar .nav-item .nav-link {
   margin-left: 10px;
-  color: #ffff;
+  color: #000;
+  font-size: 20px;
 }
 
 header .navbar .nav-item .nav-link:hover {
-  color: #FF4E0C;
+  color: #006eff;
 }
 
 /*Header End*/
 /*Slider*/
 #myCarousel .carousel-icon:hover {
-  background-color: #FF4E0C;
+  background-color: #006eff;
   padding: 25px;
   border-radius: 100%;
 }
@@ -60,7 +62,7 @@ header .navbar .nav-item .nav-link:hover {
 }
 
 .carousel-item .carousel-caption h3 {
-  color: #FF4E0C;
+  color: #006eff;
   font-family: "Montserrat", sans-serif;
   font-size: 30pt;
 }
@@ -79,7 +81,7 @@ header .navbar .nav-item .nav-link:hover {
 }
 
 .carousel-item .carousel-caption a i:hover {
-  background: #FF4E0C;
+  background: #006eff;
 }
 
 /*End Slider*/
@@ -106,13 +108,13 @@ header .navbar .nav-item .nav-link:hover {
 }
 
 #about .btn-1 {
-  background: #FF4E0C;
+  background: #006eff;
   color: #ffff;
 }
 
 #about .btn-1:hover {
-  border: 1px solid #FF4E0C;
-  color: #FF4E0C;
+  border: 1px solid #006eff;
+  color: #006eff;
   background: transparent;
 }
 
@@ -134,7 +136,7 @@ header .navbar .nav-item .nav-link:hover {
 
 #life .heading h1 {
   font-family: "Montserrat", sans-serif;
-  color: #FF4E0C;
+  color: #006eff;
 }
 
 #life .heading p {
@@ -158,7 +160,7 @@ header .navbar .nav-item .nav-link:hover {
 
 #life .card h1 {
   font-family: "Montserrat", sans-serif;
-  color: #FF4E0C;
+  color: #006eff;
 }
 
 #life .card p {
@@ -175,7 +177,7 @@ header .navbar .nav-item .nav-link:hover {
 }
 
 #works h2 {
-  color: #FF4E0C;
+  color: #006eff;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -192,14 +194,14 @@ header .navbar .nav-item .nav-link:hover {
 }
 
 #works img:hover {
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(360deg);
+          transform: rotateZ(360deg);
 }
 
 /*End Works*/
 /*Start youtube*/
 #youtube h1 {
-  color: #FF4E0C;
+  color: #006eff;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -209,13 +211,13 @@ header .navbar .nav-item .nav-link:hover {
 }
 
 #youtube .vedioboxsingel {
-  border: 4px solid #FF4E0C;
+  border: 4px solid #006eff;
 }
 
 /*End youtube*/
 /*start invite*/
 #invite h1 {
-  color: #FF4E0C;
+  color: #006eff;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -245,6 +247,11 @@ header .navbar .nav-item .nav-link:hover {
   padding: 40px 40px 30px;
 }
 
+#invite .contact-info-box .info-box .td-none {
+  text-decoration: none;
+  color: #000;
+}
+
 /*End invite*/
 /*Start massage*/
 #massage {
@@ -264,16 +271,18 @@ header .navbar .nav-item .nav-link:hover {
 }
 
 #massage form .btn {
-  background-color: #FF4E0C;
+  background-color: #006eff;
+  border: 1px solid #006eff;
 }
 
 #massage form .btn:hover {
-  border: 2px solid #ff5722;
+  border: 2px solid #006eff;
   background: none;
+  color: #006eff;
 }
 
 #massage iframe {
-  border: 4px solid #FF4E0C;
+  border: 4px solid #006eff;
 }
 
 /*End massage*/
@@ -291,11 +300,18 @@ footer p {
 }
 
 footer p a {
-  color: #FF4E0C;
+  color: #006eff;
 }
 
 /*End Footer*/
 /*madia */
+@media (max-width: 575px) {
+  header .navbar .logo img {
+    height: 47px;
+    width: 116px;
+  }
+}
+
 @media (max-width: 767px) {
   header .nav-link {
     margin-left: 0 !important;

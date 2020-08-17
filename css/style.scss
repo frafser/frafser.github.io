@@ -1,12 +1,13 @@
 /*------Common css-------*/ 
 $color1: #ffff;
-$color2: #FF4E0C;
+$color2: #006eff;
 $font1: 'Montserrat', sans-serif;
 $font2: 'Oxygen', sans-serif;
 /*Header*/
 header{
     .navbar{ 
-        background: black;
+        background: rgb(255, 255, 255);
+        border-top: 2px solid $color2;
         border-bottom: 2px solid $color2;
         box-shadow: 1px 1px 15px -1px #000;
         .logo{
@@ -20,7 +21,8 @@ header{
         .nav-item{
             .nav-link{
                 margin-left: 10px;
-                color: $color1;
+                color: #000;
+                font-size: 20px;
             }
             .nav-link:hover{
                 color: $color2;
@@ -163,7 +165,7 @@ header{
         transition: transform 2s;
     }
     img:hover{
-        transform: rotateZ(180deg);
+        transform: rotateZ(360deg);
         
     }
 }
@@ -210,6 +212,10 @@ header{
             text-align: center;
             background: #f6f6f6 ;
             padding: 40px 40px 30px;
+            .td-none{
+                text-decoration:none;
+                color: #000;
+            }
         }
     }
 }
@@ -230,10 +236,12 @@ header{
         }
         .btn{
             background-color: $color2;
+            border: 1px solid $color2;
         }
         .btn:hover{
-            border: 2px solid #ff5722;
+            border: 2px solid $color2;
             background: none;
+            color: $color2;
         }
     }
     iframe{
@@ -257,6 +265,21 @@ footer{
 }
 /*End Footer*/
 /*madia */
+@media(max-width:575px){
+    header{
+        .navbar{
+            .logo{
+                img{
+                    height: 47px;
+                    width: 116px;
+                }
+            }
+        }
+        #navbarNav{
+            
+        }
+    }
+}
 @media(max-width: 767px){
     header{
         .nav-link{
