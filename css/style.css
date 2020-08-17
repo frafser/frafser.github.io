@@ -1,5 +1,5 @@
 /*------Common css-------*/
-/*Header*/
+/* ======================== Header =========================*/
 header .navbar {
   background: white;
   border-top: 2px solid #006eff;
@@ -21,15 +21,15 @@ header .navbar .logo:hover {
 header .navbar .nav-item .nav-link {
   margin-left: 10px;
   color: #000;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 header .navbar .nav-item .nav-link:hover {
   color: #006eff;
 }
 
-/*Header End*/
-/*Slider*/
+/*======================= Header End ======================= */
+/*========================= Slider =========================*/
 #myCarousel .carousel-icon:hover {
   background-color: #006eff;
   padding: 25px;
@@ -84,8 +84,8 @@ header .navbar .nav-item .nav-link:hover {
   background: #006eff;
 }
 
-/*End Slider*/
-/*Start About*/
+/* ====================== End Slider ========================*/
+/*======================= Start About========================*/
 #about {
   background: rgba(128, 128, 128, 0.445);
   padding: 100px 0 !important;
@@ -124,8 +124,8 @@ header .navbar .nav-item .nav-link:hover {
   background: transparent;
 }
 
-/*End About*/
-/*Start Life*/
+/*======================== End About ======================== */
+/*======================== Start Lif e======================== */
 #life {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8))), url(../image/banner/banner6.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.8)), url(../image/banner/banner6.jpg);
@@ -167,8 +167,8 @@ header .navbar .nav-item .nav-link:hover {
   font-family: "Oxygen", sans-serif;
 }
 
-/*End Life*/
-/*Start Works*/
+/*========================== End Life========================== */
+/*========================== Start Works========================== */
 #works {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../image/banner/workbanner2.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/banner/workbanner2.jpg);
@@ -198,8 +198,8 @@ header .navbar .nav-item .nav-link:hover {
           transform: rotateZ(360deg);
 }
 
-/*End Works*/
-/*Start youtube*/
+/*============================ End Works ============================  */
+/*============================ Start youtube ============================  */
 #youtube h1 {
   color: #006eff;
   font-family: "Montserrat", sans-serif;
@@ -214,8 +214,8 @@ header .navbar .nav-item .nav-link:hover {
   border: 4px solid #006eff;
 }
 
-/*End youtube*/
-/*start invite*/
+/*=============================== End youtube =============================== */
+/*=============================== start invite =============================== */
 #invite h1 {
   color: #006eff;
   font-family: "Montserrat", sans-serif;
@@ -252,8 +252,8 @@ header .navbar .nav-item .nav-link:hover {
   color: #000;
 }
 
-/*End invite*/
-/*Start massage*/
+/*=============================== End invite =============================== */
+/*=============================== Start massage =============================== */
 #massage {
   background: url(../image/banner/foooter.png);
   background-repeat: no-repeat;
@@ -285,8 +285,8 @@ header .navbar .nav-item .nav-link:hover {
   border: 4px solid #006eff;
 }
 
-/*End massage*/
-/*Start Footer*/
+/*================================ End massag e================================ */
+/*================================ Start Footer ================================ */
 footer {
   background: #000;
   text-align: center;
@@ -303,8 +303,8 @@ footer p a {
   color: #006eff;
 }
 
-/*End Footer*/
-/*madia */
+/*================================== End Footer================================== */
+/*================================== @ media Quary ==================================  */
 @media (max-width: 575px) {
   header .navbar .logo img {
     height: 47px;
