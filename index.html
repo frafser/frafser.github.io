@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- /custom css -->
 </head>
-<body>
+<body onload="myfunction()">
+    <div id="loading"></div>
     <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
@@ -308,7 +309,12 @@
         AOS.init({
             duration: 1000
         });
-    </script>
-    <!-- /Aos js -->
+        // Aos js
+        var preloader = document.getElementById("loading");
+        function myfunction(){
+            preloader.style.display = ""
+        }
+        // preloader js
+        </script>
 </body>
 </html>
