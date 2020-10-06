@@ -3,18 +3,19 @@ $color1: #ffff;
 $color2: #006eff;
 $font1: 'Montserrat', sans-serif;
 $font2: 'Oxygen', sans-serif;
+$font3: 'Oswald', sans-serif;
 /* ======================== Header =========================*/
 #loading{
     position:fixed;
     top: 0;
     width: 100%;
     height: 100%;
-    background: #F1F2F3 url("../image/preloader/DualRing.gif") no-repeat center;
+    background: #F1F2F3 url("../image/preloader/30.gif") no-repeat center;
     z-index: 9999;
 }
 header{
     .navbar{ 
-        background: rgb(255, 255, 255);
+        background: rgb(240, 240, 240);
         border-top: 2px solid $color2;
         border-bottom: 2px solid $color2;
         box-shadow: 1px 1px 15px -1px #000;
@@ -27,10 +28,15 @@ header{
             color: $color1;
         }
         .nav-item{
+            .active{
+                background-color: $color2;
+                color: #fff !important;
+            }
             .nav-link{
                 margin-left: 10px;
                 color: #000;
                 font-size: 15px;
+                transition: .3s;
             }
             .nav-link:hover{
                 color: $color2;
@@ -39,56 +45,57 @@ header{
     }
 }
 /*======================= Header End ======================= */ 
-/*========================= Slider =========================*/
-#myCarousel{
-    .carousel-icon:hover{
-        background-color: $color2;
-        padding: 25px;
-        border-radius: 100%;
-    }
-}
-.carousel-img1{
-    background:  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/banner/banner3.jpg);
-    background-position-x: center;
-   background-repeat: no-repeat;
-}
-.carousel-img2{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/banner/banner6.jpg);
-    background-position-x: center;
-   background-repeat: no-repeat;
-}
-.carousel-img3{
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/banner/myimage.jpg);
-    background-position: center center;
-   background-repeat: no-repeat;
-}
-.carousel-item{
-    height: 563px;
-    .carousel-caption{
-        h3{
-            color: $color2;
-            font-family: $font1;
-            font-size: 30pt;
-        }
-        p{
-            font-style: $font2;
-            color: $color1;
-        }
-        a{
-            i{
-                border: 2px solid $color1;
-                padding: 10px 10px;
-                border-radius: 2rem;
-                margin-right: 15px;
-                color: $color1;
+/* ====================== Start Banner ========================*/
+    #banner{
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../image/banner/back-top.jpg) no-repeat;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        .row{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: translateY(40%);
+            .typed-area{
+                h1{
+                    color:rgb(230, 230, 230);
+                    font-family: $font3;
+                    font-weight: 600;
+                    font-size: 60px;
+                    span{
+                        color: red;
+                    }
+                }
+                h2{
+                    color: rgb(255, 255, 255);
+                    font-family: $font1;
+                    .typed-cursor {
+                        color: red;
+                    }
+                }
+                .icons{
+                    margin:30px 0;
+                    a{
+                        padding:10px 13px;
+                        background: transparent;
+                        border: 2px solid #fff;
+                        border-radius: 100%;
+                        margin: 0 5px;
+                        color: #fff;
+                        transition: .4s;
+                    }
+                    a:hover{
+                        color: red;
+                        background: #fff;
+                    }
+                }
             }
-            i:hover{
-                background: $color2;
-            }
         }
     }
-}
-/* ====================== End Slider ========================*/
+/* ====================== End Banner ========================*/
 /*======================= Start About========================*/
 #about{
     background: rgba(128, 128, 128, 0.445);
@@ -264,7 +271,7 @@ footer{
         color: #848484;        ;
         font-weight: normal;
         font-family: $font2;
-        font-size: 20px;
+        font-size: 15px;
         a{
             color: $color2;
         }
@@ -279,6 +286,15 @@ footer{
                 img{
                     height: 47px;
                     width: 116px;
+                }
+            }
+        }
+    }
+    #banner{
+        .row{
+            .typed-area{
+                h1{
+                    font-size: 40px;
                 }
             }
         }
