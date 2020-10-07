@@ -78,11 +78,15 @@ header .navbar .nav-item .nav-link:hover {
 
 #banner .row .typed-area h2 {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: 350;
+  letter-spacing: 1px;
 }
 
 #banner .row .typed-area h2 .typed-cursor {
   color: red;
+  font-size: 40px;
+  font-weight: 350;
 }
 
 #banner .row .typed-area .icons {
@@ -98,6 +102,14 @@ header .navbar .nav-item .nav-link:hover {
   color: #fff;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+#banner .row .typed-area .icons a:first-child {
+  padding: 10px 15px;
+}
+
+#banner .row .typed-area .icons a:last-child {
+  padding: 10px 12px;
 }
 
 #banner .row .typed-area .icons a:hover {

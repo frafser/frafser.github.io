@@ -71,9 +71,13 @@ header{
                 }
                 h2{
                     color: rgb(255, 255, 255);
-                    font-family: $font1;
+                    font-family: $font3;
+                    font-weight: 350;
+                    letter-spacing: 1px;
                     .typed-cursor {
                         color: red;
+                        font-size: 40px;
+                        font-weight: 350;
                     }
                 }
                 .icons{
@@ -86,6 +90,12 @@ header{
                         margin: 0 5px;
                         color: #fff;
                         transition: .4s;
+                    }
+                    a:first-child{
+                        padding: 10px 15px;
+                    }
+                    a:last-child{
+                        padding: 10px 12px;
                     }
                     a:hover{
                         color: red;
